@@ -54,3 +54,6 @@ $('#filterForm').on('submit',function(){
     })
     return false
 })
+$('#postsBox').on('click','.edit',function(){
+    location.href = `post-edit.html?id=${$(this).attr('data-id')}`
+})
